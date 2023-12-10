@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     int n;
-    float ca,cl,in,gs,ar,s,nfa,ta,tl,oi,ic,ni,pd,ce,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11;
+    float ca,cl,in,gs,ar,s,nfa,ta,tl,oi,ic,ni,pd,ce,r;
 
     cout<<"Enter Current Assets:";
     cin>>ca;
@@ -35,7 +35,7 @@ int main()
     cin>>ce;
     cout<<"\n\n";
 
-    /*for(int i=0;i<=10;i++)
+    for(int i=0;i<=10;i++)
     {
 
         cout<<"which ratio do you want to know?\n";
@@ -51,67 +51,67 @@ int main()
         cout<<"press 10 for Return on Total Assets (ROA) ratio.\n";
         cout<<"press 11 for Return on Equity (ROE) ratio.\n";
         cout<<"press 0 if you don't want any ratio.\n";
-        cout<<"\n";
+        cout<<"\n\n";
         cin>>n;
 
-        if(n>=0&&n<=11)*/
-       // {
-            //if(n==1)
-            //{
-                r1=ca/cl;
-                cout<<"\nThe current ratio  is "<<r1<<" X\n\n";
-           // }
-            //else if(n==2)
-           // {
-                r2=(ca-in)/cl;
-                cout<<"\nThe ratio Quick is: "<<r2<<" X\n\n";
-           // }
-            //else if(n==3)
-           // {
-                r3=gs/in;
-                cout<<"\nThe Inventory Turnover ratio is: "<<r3<<" X\n\n";
-           // }
-            //else if(n==4)
-          //  {
-                r4=ar/(s/360);
-                cout<<"\nThe DSO ratio is: "<<r4<<" Days\n\n";
-          //  }
-           // else if(n==5)
-          //  {
-                r5=s/nfa;
-                cout<<"\nThe Fixed assets turn over ratio is: "<<r5<<" times\n\n";
-          //  }
-           // else if(n==6)
-           // {
-                r6=s/ta;
-                cout<<"\nThe Total assets turn over ratio is: "<<r6<<" times\n\n";
-          //  }
-           // else if(n==7)
-           // {
-                r7=(tl/ta)*100;
-                cout<<"\nThe Debt ratio is: "<<r7<<"%\n\n";
-           // }
-           // else if(n==8)
-            //{
-                r8=oi/ic;
-                cout<<"\nThe TIE ratio is:"<<r8<<" X\n\n";
-           // }
-           // else if(n==9)
-           // {
-                r9=ni/s;
-                cout<<"\nThe Net Profit Margin ratio is: "<<r9<<"\n\n";
-           // }
-           // else if(n==10)
-          //  {
-                r10=ni/ta;
-                cout<<"\nThe ROA ratio is: "<<r10<<"\n\n";
-          //  }
-           // else if(n==11)
-           // {
-                r11=ni-pd/ce;
-                cout<<"\nThe ROE ratio is: "<<r11<<"\n\n";
-           // }
-            /*else if(n==0)
+        if(n>=0&&n<=11)
+        {
+            if(n==1)
+            {
+                r=ca/cl;
+                cout<<"\nThe current ratio  is "<<r<<" X\n\n";
+            }
+            else if(n==2)
+            {
+                r=(ca-in)/cl;
+                cout<<"\nThe ratio Quick is: "<<r<<" X\n\n";
+            }
+            else if(n==3)
+            {
+                r=gs/in;
+                cout<<"\nThe Inventory Turnover ratio is: "<<r<<" X\n\n";
+            }
+            else if(n==4)
+            {
+                r=ar/(s/360);
+                cout<<"\nThe DSO ratio is: "<<r<<" Days\n\n";
+            }
+            else if(n==5)
+            {
+                r=s/nfa;
+                cout<<"\nThe Fixed assets turn over ratio is: "<<r<<" times\n\n";
+            }
+            else if(n==6)
+            {
+                r=s/ta;
+                cout<<"\nThe Total assets turn over ratio is: "<<r<<" times\n\n";
+            }
+            else if(n==7)
+            {
+                r=(tl/ta)*100;
+                cout<<"\nThe Debt ratio is: "<<r<<"%\n\n";
+            }
+            else if(n==8)
+            {
+                r=oi/ic;
+                cout<<"\nThe TIE ratio is:"<<r<<" X\n\n";
+            }
+            else if(n==9)
+            {
+                r=ni/s;
+                cout<<"\nThe Net Profit Margin ratio is: "<<r<<"\n\n";
+            }
+            else if(n==10)
+            {
+                r=ni/ta;
+                cout<<"\nThe ROA ratio is: "<<r<<"\n\n";
+            }
+            else if(n==11)
+            {
+                r=ni-pd/ce;
+                cout<<"\nThe ROE ratio is: "<<r<<"\n\n";
+            }
+            else if(n==0)
             {
                 break;
             }
@@ -122,7 +122,7 @@ int main()
 
             }
         }
-    }*/
+    }
 
     return 0;
 }
